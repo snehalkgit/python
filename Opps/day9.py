@@ -67,3 +67,63 @@ else:
   print("No error found")
 finally:
   print("This line will always get excecuted !!!")
+
+
+##error handling usiing try catch
+
+
+a = 50
+try:
+    b = 0
+    c=a/b
+    name = "snehal"
+    print(c)
+    print(name[1])
+except ZeroDivisionError  as e:
+    print("something went wrong",e)
+except IndexError as e:
+    print("something went wrong",e)
+else:
+    print("complete code exceuted sucessfully")
+finally:
+    print("this will always be excecuted")
+    print(a)
+
+
+##custom exception
+##rasing user defined exceptions
+
+
+
+
+# x = 11
+# print(x%2!=0)
+#
+# if x%2!=0 :
+#   raise Exception("Enter even Number Only")
+# else:
+#   print("Entered num is even")
+
+
+curren_year = 2024
+year_born = 1999
+
+if year_born> curren_year:
+    raise Exception("invalid year of birth")
+else:
+    age = curren_year- year_born
+    print(age)
+
+
+
+try:
+    if year_born>curren_year:
+        raise Exception("invalid year of birth")
+    else:
+        age=curren_year-year_born
+        print(age)
+except:
+    print("some error ocured")
+
+
+    
